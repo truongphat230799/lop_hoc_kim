@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fff9f1;
+  --foreground: #1f2a44;
+  --muted: #50627f;
+  --accent: #ff7b54;
+  --accent-soft: #fff1e7;
+  --card: rgba(255, 255, 255, 0.82);
+  --font-sans: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --font-mono: "Consolas", "SFMono-Regular", monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background:
+    radial-gradient(circle at top left, rgba(255, 192, 144, 0.55), transparent 32%),
+    radial-gradient(circle at top right, rgba(114, 221, 247, 0.24), transparent 28%),
+    linear-gradient(180deg, #fffaf3 0%, #f8fbff 55%, #fff4ea 100%);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+a,
+button {
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease,
+    opacity 180ms ease;
+}
+
+::selection {
+  background: rgba(255, 123, 84, 0.18);
+}
+
+.site-shell {
+  position: relative;
+  overflow: clip;
+}
+
+.site-shell::before,
+.site-shell::after {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 999px;
+  filter: blur(28px);
+  opacity: 0.55;
+}
+
+.site-shell::before {
+  top: 8rem;
+  left: -5rem;
+  width: 15rem;
+  height: 15rem;
+  background: rgba(255, 184, 108, 0.48);
+  animation: floatOrb 13s ease-in-out infinite;
+}
+
+.site-shell::after {
+  right: -4rem;
+  bottom: 10rem;
+  width: 18rem;
+  height: 18rem;
+  background: rgba(114, 221, 247, 0.34);
+  animation: floatOrb 15s ease-in-out infinite reverse;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+.section-shell {
+  animation: riseIn 520ms ease-out both;
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatOrb {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(18px, -18px, 0) scale(1.08);
+  }
+}
