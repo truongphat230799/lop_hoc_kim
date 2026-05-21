@@ -120,7 +120,7 @@ export async function getAdminData() {
 
 // Vercel Blob disabled — project uses external links (Google Drive, etc.) to stay on free tier.
 // Remove this early return and uncomment the put() call if switching to Blob storage.
-async function uploadBlobFile(_formData: FormData, _fieldName: string, _folder: string) {
+async function uploadBlobFile(_formData: FormData, _fieldName: string, _folder: string): Promise<{ url: string; pathname: string } | null> {
   return null;
 }
 
