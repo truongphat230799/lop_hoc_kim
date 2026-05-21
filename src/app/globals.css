@@ -7,7 +7,8 @@
   --accent: #ff7b54;
   --accent-soft: #fff1e7;
   --card: rgba(255, 255, 255, 0.82);
-  --font-sans: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --font-sans: var(--font-nunito), Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --font-display: var(--font-quicksand), var(--font-sans);
   --font-mono: "Consolas", "SFMono-Regular", monospace;
 }
 
@@ -16,7 +17,12 @@
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
   --font-mono: var(--font-mono);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
 }
 
 * {

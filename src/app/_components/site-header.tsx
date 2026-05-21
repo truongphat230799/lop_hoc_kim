@@ -8,7 +8,6 @@ const navItems = [
   { href: "/kiem-tra", label: "Kiểm tra" },
   { href: "/lop-hoc", label: "Lớp học" },
   { href: "/be-vui-hoc", label: "Bé vui học" },
-  { href: "/quan-tri", label: "Sửa local" },
 ];
 
 export function SiteHeader() {
@@ -40,13 +39,6 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-
-        <Link
-          href="/quan-tri"
-          className="rounded-full bg-[#1f2a44] px-4 py-2 text-sm font-semibold text-white shadow-[0_16px_34px_rgba(31,42,68,0.24)] transition hover:-translate-y-0.5"
-        >
-          Chỉnh nội dung
-        </Link>
       </div>
     </header>
   );

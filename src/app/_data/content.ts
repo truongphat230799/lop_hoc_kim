@@ -56,6 +56,18 @@ export type ExamItem = {
   questions: ExamQuestion[];
 };
 
+export type ExamResultItem = {
+  id: string;
+  examId: string;
+  examTitle: string;
+  studentName: string;
+  score: number;
+  total: number;
+  submittedAt: string;
+  durationSeconds: number;
+  answers: Record<string, number>;
+};
+
 export type ClassPost = {
   id: string;
   title: string;

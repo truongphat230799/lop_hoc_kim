@@ -1,8 +1,23 @@
 import type { Metadata } from "next";
+import { Nunito, Quicksand } from "next/font/google";
 
 import "./globals.css";
 import { SiteHeader } from "@/app/_components/site-header";
 import { siteName } from "@/app/_data/content";
+
+const nunito = Nunito({
+  subsets: ["vietnamese"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-nunito",
+  display: "swap",
+});
+
+const quicksand = Quicksand({
+  subsets: ["vietnamese"],
+  weight: ["500", "600", "700"],
+  variable: "--font-quicksand",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: `${siteName} | Không gian học tập cho tiền tiểu học đến lớp 5`,
@@ -16,8 +31,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi" className="h-full scroll-smooth antialiased">
-      <body className="min-h-full">
+    <html lang="vi" className={`h-full scroll-smooth antialiased ${nunito.variable} ${quicksand.variable}`}>
+      <body className="min-h-full font-sans">
         <div className="site-shell flex min-h-screen flex-col">
           <SiteHeader />
           <main className="flex-1">{children}</main>

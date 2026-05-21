@@ -29,11 +29,11 @@ export default async function Home() {
             </div>
 
             <h1 className="mt-6 max-w-4xl text-4xl font-black leading-tight text-[#1f2a44] sm:text-5xl lg:text-6xl">
-              Học vui, thi nhẹ, cập nhật lớp học mỗi ngày trên một website đẹp và dễ dùng.
+              Chào mừng các con đến với Lớp học cô Kim!
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-9 text-[#50627f]">
-              Lớp học cô Kim được thiết kế cho tiền tiểu học đến lớp 5: có thư viện tài liệu theo khối, kiểm tra online chỉ cần nhập mật khẩu, góc lớp học để đăng ảnh nhật ký và khu trò chơi vui mắt cho các bé mới làm quen chữ số.
+              Không gian học tập và vui chơi thân thiện dành cho học sinh từ tiền tiểu học đến lớp 5. Tại đây, các con có thể tải tài liệu ôn tập, làm các bài kiểm tra trắc nghiệm vui vẻ và tham gia khu trò chơi phát triển trí tuệ.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
