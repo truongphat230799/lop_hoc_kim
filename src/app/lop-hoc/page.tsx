@@ -1,4 +1,4 @@
-﻿import { ClassroomJournal } from "@/app/_components/classroom-journal";
+import { ClassroomJournal } from "@/app/_components/classroom-journal";
 import { getClassPosts } from "@/app/_data/storage";
 
 export default async function ClassroomPage() {
@@ -23,7 +23,7 @@ export default async function ClassroomPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.24em]">Nhật ký mới nhất</p>
             <p className="mt-3 text-3xl font-black">{posts.length} bài đăng lớp học</p>
             <p className="mt-2 text-sm leading-7 text-white/90">
-              Các bài đăng được chỉnh trực tiếp từ dữ liệu local nên rất dễ kiểm soát trước khi commit lên Vercel.
+              Nơi cập nhật thường xuyên các hoạt động học tập, sáng tạo và vui chơi đầy thú vị của các con.
             </p>
           </div>
         </div>

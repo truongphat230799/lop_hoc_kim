@@ -22,7 +22,7 @@ const quicksand = Quicksand({
 export const metadata: Metadata = {
   title: `${siteName} | Không gian học tập cho tiền tiểu học đến lớp 5`,
   description:
-    "Website học tập có thư viện tài liệu, kiểm tra online nhập mật khẩu, góc lớp học và khu trò chơi cho bé, tối ưu để deploy trên Vercel.",
+    "Không gian học tập thân thiện dành cho các con từ tiền tiểu học đến lớp 5. Cung cấp thư viện tài liệu, các đề tự luyện trắc nghiệm trực tuyến có chấm điểm và các trò chơi phát triển trí tuệ.",
 };
 
 export default function RootLayout({
@@ -47,7 +47,7 @@ export default function RootLayout({
                 </p>
               </div>
               <div className="rounded-full bg-white/70 px-4 py-2 font-semibold text-[#1f2a44] shadow-[0_14px_34px_rgba(64,73,104,0.08)]">
-                Sẵn sàng deploy Vercel
+                Đồng hành cùng bé học tập
               </div>
             </div>
           </footer>

@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 
 import { MaterialsExplorer } from "@/app/_components/materials-explorer";
 import { getExternalResources, getMaterials } from "@/app/_data/storage";
@@ -19,14 +19,14 @@ export default async function MaterialsPage() {
               Chọn tài liệu theo từng khối, từng môn học và từng mục tiêu ôn luyện.
             </h1>
             <p className="mt-4 max-w-3xl text-base leading-8 text-[#50627f]">
-              Từ tiền tiểu học đến lớp 5, mỗi tài liệu đều được nhóm theo khối và môn để giáo viên, phụ huynh và học sinh dễ tìm. Nội dung chính được sửa trực tiếp trong repo nên rất gọn khi deploy Vercel.
+              Từ tiền tiểu học đến lớp 5, các bài tập, phiếu ôn tập đều được tuyển chọn và sắp xếp theo từng khối lớp và môn học để giúp học sinh và phụ huynh dễ dàng tìm kiếm.
             </p>
           </div>
           <div className="rounded-[30px] bg-[linear-gradient(135deg,#ffd166,#ff8a5b)] p-6 text-white shadow-[0_20px_44px_rgba(255,138,91,0.24)]">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em]">Trạng thái dữ liệu</p>
-            <p className="mt-3 text-3xl font-black">{items.length} tài liệu local</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.24em]">Thư viện tổng hợp</p>
+            <p className="mt-3 text-3xl font-black">{items.length} tài liệu học tập</p>
             <p className="mt-2 text-sm leading-7 text-white/90">
-              Khi cần cập nhật, anh chỉ việc sửa file dữ liệu rồi commit. Không cần tài khoản hay trang quản trị riêng.
+              Được cập nhật thường xuyên nhằm hỗ trợ đắc lực cho các con trong quá trình tự ôn luyện và phát triển tư duy tại nhà.
             </p>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default async function MaterialsPage() {
             </h2>
           </div>
           <p className="max-w-2xl text-sm leading-7 text-[#50627f]">
-            Đây là các nguồn tham khảo em đã chọn để anh biên tập lại thành nội dung local trong repo.
+            Các website và nguồn học liệu uy tín được tổng hợp giúp phụ huynh và giáo viên tham khảo thêm bài tập đa dạng cho các con.
           </p>
         </div>
 

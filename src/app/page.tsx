@@ -50,15 +50,6 @@ export default async function Home() {
                 Vào khu Bé vui học
               </Link>
             </div>
-
-            <div className="mt-8 flex flex-wrap gap-3">
-              <span className="rounded-full bg-[#eef6ff] px-4 py-2 text-sm font-semibold text-[#2656a8]">
-                Sửa nội dung bằng file local
-              </span>
-              <span className="rounded-full bg-[#fff5e3] px-4 py-2 text-sm font-semibold text-[#b4692c]">
-                Commit lên Vercel là build lại
-              </span>
-            </div>
           </div>
 
           <div className="grid gap-4">
